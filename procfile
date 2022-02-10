@@ -1,0 +1,1 @@
+web: gunicorn -t 240 --graceful-timeout 90 --keep-alive 90 -w 8 -k uvicorn.workers.UvicornWorker endpoint:app
